@@ -31,16 +31,12 @@ All of the project files are organized into folders. For example, Chapter01.
 The code will look like the following:
 
 ```
-public override void Define(IPermissionDefinitionContext context)
-{
-    var myGroup = context.AddGroup(
-        "ProductManagement",
-        L("ProductManagement"));
-    var parent = myGroup.AddPermission(
-        "MyParentPermission");
-    parent.AddChild("MyChildPermission");
-}
 
+void Start()
+{
+this.transform.localPosition = Vector3.zero; startPos = transform.position;
+Distance();
+}
 
 ```
 
