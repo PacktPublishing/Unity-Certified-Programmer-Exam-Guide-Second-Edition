@@ -28,6 +28,22 @@ alt="https://www.packtpub.com/" border="5" /></a>
 ## Instructions and Navigations
 All of the project files are organized into folders. For example, Chapter01.
 
+The code will look like the following:
+
+```
+public override void Define(IPermissionDefinitionContext context)
+{
+    var myGroup = context.AddGroup(
+        "ProductManagement",
+        L("ProductManagement"));
+    var parent = myGroup.AddPermission(
+        "MyParentPermission");
+    parent.AddChild("MyChildPermission");
+}
+
+
+```
+
 **Following is what you need for this book:**
 
 This book is for aspiring engineers, designers, makers, draftsmen, and hobbyists looking to get started with SOLIDWORKS and explore the software. Individuals who are interested in becoming Certified SOLIDWORKS Associates (CSWAs) or Certified SOLIDWORKS Professionals (CSWPs) will also find this book useful. No specific background is needed to follow the concepts in the book as it starts from the basics of SOLIDWORKS. However, basic theoretical knowledge of 3D modeling will be helpful to get the most out of this book.
